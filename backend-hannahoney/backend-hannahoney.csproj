@@ -16,13 +16,9 @@
 
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Models\ Common\" />
-    <Folder Include="Models\Products\" />
-    <Folder Include="Models\Media\" />
+    <Folder Include="Models\Common\" />
   </ItemGroup>
   <ItemGroup>
-    <None Remove="Models\ Common\" />
-    <None Remove="Models\Products\" />
-    <None Remove="Models\Media\" />
+    <None Remove="Models\Common\" />
   </ItemGroup>
 </Project>
