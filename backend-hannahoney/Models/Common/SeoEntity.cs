@@ -1,9 +1,9 @@
 ﻿using System;
 namespace backend_hannahoney.Models
 {
-    public abstract class SeoEntity
+    public class SeoEntity
     {
-        
+        public  Guid Id { get; set; } = Guid.NewGuid();
         // Core content
         public string Title { get; set; } = null!;
         public string? Excerpt { get; set; }

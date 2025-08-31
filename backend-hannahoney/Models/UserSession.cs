@@ -3,6 +3,7 @@ namespace backend_hannahoney.Models
 {
 	public class UserSession
 	{
+        public Guid Id { get; set; } = Guid.NewGuid();
         public Guid UserId { get; set; }
         public User User { get; set; } = null!;
 
@@ -16,7 +17,7 @@ namespace backend_hannahoney.Models
         public string? UserAgent { get; set; }
         public string? IpAddress { get; set; }
 
-        public bool IsActiveSession => RevokedAt == null && ExpiresAt > DateTimeOffset.UtcNow;
+        // public bool IsActiveSession => RevokedAt == null && ExpiresAt > DateTimeOffset.UtcNow;
     }
 }
 

@@ -3,9 +3,9 @@ using System.Security;
 
 namespace backend_hannahoney.Models
 {
-	public class User
+	public class User: BaseEntity
 	{
-        public Guid Id { get; set; } = Guid.NewGuid();
+      
         public string Email { get; set; } = null!;
         public string? EmailNormalized { get; set; } // upper-invariant để unique
         public string? FullName { get; set; }
@@ -23,7 +23,7 @@ namespace backend_hannahoney.Models
         //relationship role
 
         public Guid RoleId { get; set; }
-        public ICollection<Role>? Role { get; set; } = new List<Role>();
+        public ICollection<Role>? Roles { get; set; } = new List<Role>();
 
     }
 }

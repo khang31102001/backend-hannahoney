@@ -3,7 +3,7 @@ namespace backend_hannahoney.Models
 {
 	public class BaseEntity
 	{
-    
+         public Guid Id { get; set; } = Guid.NewGuid();
         // Audit
         public DateTimeOffset CreatedAt { get; set; } = DateTimeOffset.UtcNow;
         public string? CreatedBy { get; set; }
